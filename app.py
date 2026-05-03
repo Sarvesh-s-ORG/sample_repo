@@ -8,6 +8,9 @@ from db import get_connection, init_db
 app_name = 'My Notes App'
 app_version = '1.0.0'
 APP_SECRET = "dev-secret"
+a = 1
+b = 2
+c = 3
 
 app = Flask(__name__)
 app.secret_key = APP_SECRET
