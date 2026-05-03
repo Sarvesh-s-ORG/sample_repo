@@ -29,11 +29,11 @@ def render_notes(notes):
         "<input name='body' placeholder='body' />"
         "<button type='submit'>Add</button>"
         "</form>"
-    )
+    
     return "\n".join(html)
 
 
-@app.route("/")
+@app.route("/"
 def index():
     with get_connection() as conn:
         notes = conn.execute("SELECT * FROM notes ORDER BY id DESC").fetchall()
