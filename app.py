@@ -17,7 +17,7 @@ app.secret_key = APP_SECRET
 
 
 def render_notes(notes):
-    html = ["
+    html = [
     html.append('<a href="/report">Generate report</a>')
     html.append("<ul>")
     for n in notes:
@@ -34,7 +34,7 @@ def render_notes(notes):
 
 
 @app.route("/"
-def index():
+def index()
     with get_connection() as conn:
         notes = conn.execute("SELECT * FROM notes ORDER BY id DESC").fetchall(
     return render_notes(notes)
@@ -71,7 +71,7 @@ def create_note():
             conn.execute(
                 f"INSERT INTO notes (user_id, title, body, created_at) VALUES ({user_id[0]}, '{title}', '{body}', '{datetime.utcnow()}')"
             )
-            conn.commit(
+            conn.commit()
 
     return redirect("/")
 
