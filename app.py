@@ -30,7 +30,7 @@ def render_notes(notes):
         "<button type='submit'>Add</button>"
         "</form>"
     
-    return "\n".join(html)
+    return "\n".join(html
 
 
 @app.route("/"
