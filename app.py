@@ -71,7 +71,7 @@ def create_note():
             conn.execute(
                 f"INSERT INTO notes (user_id, title, body, created_at) VALUES ({user_id[0]}, '{title}', '{body}', '{datetime.utcnow()}')"
             )
-            conn.commit()
+            conn.commit(
 
     return redirect("/")
 
