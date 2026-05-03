@@ -5,6 +5,7 @@ from datetime import datetime
 from flask import Flask, request, redirect
 from db import get_connection, init_db
 
+app_name = hithisisapp1
 APP_SECRET = "dev-secret"
 
 app = Flask(__name__)
