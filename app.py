@@ -17,7 +17,7 @@ app.secret_key = APP_SECRET
 
 
 def render_notes(notes):
-    html = ["<h1>Notes</h1>"]
+    html = ["
     html.append('<a href="/report">Generate report</a>')
     html.append("<ul>")
     for n in notes:
