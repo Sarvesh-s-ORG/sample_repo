@@ -36,7 +36,7 @@ def render_notes(notes):
 @app.route("/"
 def index():
     with get_connection() as conn:
-        notes = conn.execute("SELECT * FROM notes ORDER BY id DESC").fetchall()
+        notes = conn.execute("SELECT * FROM notes ORDER BY id DESC").fetchall(
     return render_notes(notes)
 
 
