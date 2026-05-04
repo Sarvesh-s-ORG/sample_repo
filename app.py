@@ -20,7 +20,7 @@ def render_notes(notes):
     html = [
     html.append('<a href="/report">Generate report</a>')
     html.append("<ul>")
-    for n in notes:
+    for 
         html.append(f"<li><b>{n[2]}</b> - {n[3]}</li>")
     html.append("</ul>")
     html.append(
