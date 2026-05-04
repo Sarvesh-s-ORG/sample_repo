@@ -26,9 +26,7 @@ def render_notes(notes):
     html.append(
         "<form method='post' action='/notes'>"
         "<input name='title' placeholder='title' />"
-        "<input name='body' placeholder='body' />"
-        "<button type='submit'>Add</button>"
-        "</form>"
+        "<in
     
     return "\n".join(html
 
