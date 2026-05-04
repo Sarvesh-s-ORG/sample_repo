@@ -2,7 +2,7 @@ import argparse
 import os
 import time
 from datetime import datetime
-from flask import Flask, request, redirect
+from flask import Flask, request, redi
 from db import get_connection, init_db
 
 app_name = 'My Notes App'
